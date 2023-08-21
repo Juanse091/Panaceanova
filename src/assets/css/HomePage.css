@@ -179,7 +179,119 @@
 
 /*? APARTADO MOVIL "390 PIXELES" */
 
-@media (max-width: 390px) {
+@media (max-width: 500px) {
+    .ads{
+        height: auto;
+        margin-top: 25px;
+    }
+    .ads > img{
+        width: 286px;
+        height: 165px;
+    }
+
+    .title{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .categories_section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 20px;
+        height: 100%;
+    }
+
+    .categories_container{
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .categories{
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .categories > img{
+        width: 32.5px;
+        height: 32.5px;
+    }
+
+    .txt_categorie{
+        font-size: 13px;
+    }
+
+    .arrow_container{
+        height: auto;
+    }
+
+    .arrow{
+        width: 7px;
+        height: 27px;
+        font-size: 10px;
+    }
+
+    .display_none{
+        display: none;
+    }
+
+    .featured_section{
+        margin: 0;
+        margin-top: 50px;
+        height: 100%;
+    }
+
+    .product{
+        padding: 20px;
+        justify-content: center;
+        /* align-items: center; */
+        font-size: 10px;
+
+    }
+
+    .product > img{
+        position: relative;
+        width: 53px;
+        height: 67px;
+        margin-top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .fp_container{
+        margin-top: 20px;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 1rem;
+        width: 90%;
+    }
+    .btn_buy{
+        font-size: 9px;
+        height: 15px;
+    }
+
+    .partners_section{
+        margin: 50px 0;
+    }
+
+    .partners_container{
+        margin: 50px 0;
+    }
+
+    .partners{
+        border-radius: 50%;
+        border: 2px solid #F5F5F5;
+        width: 105px;
+        height: 105px;
+        overflow: hidden;
+    }
     
+    .partners > img{
+        width: 105px;
+        height: 105px;
+    }    
 }
  

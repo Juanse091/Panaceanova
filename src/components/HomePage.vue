@@ -18,11 +18,11 @@
                     <img src="../assets/img/medicamentos.png" alt="">
                     <p class="txt_categorie"> Categoria 2 </p>
                 </article>
-                <article class="categories">
+                <article class="categories display_none">
                     <img src="../assets/img/medicamentos.png" alt="">
                     <p class="txt_categorie"> Categoria 3 </p>
                 </article>
-                <article class="categories">
+                <article class="categories display_none">
                     <img src="../assets/img/medicamentos.png" alt="">
                     <p class="txt_categorie"> Categoria 4 </p>
                 </article>
@@ -58,7 +58,7 @@
                         <button class="btn_buy">Comprar</button>
                     </router-link>
                 </article>
-                <article class="product">
+                <article class="product display_none">
                     <img src="../assets/img/Olmetec.png" alt="">
                     <hr>
                     <p>Olmetec 20mg</p>
@@ -79,8 +79,8 @@
             <div class="partners_container">
                 <article class="partners"><img src="../assets/img/Logo.png" alt=""> </article>
                 <article class="partners"><img src="../assets/img/Aliados2.jpg" alt=""> </article>
-                <article class="partners"><img src="../assets/img/Aliados4.jpg" alt=""> </article>
-                <article class="partners"><img src="../assets/img/Aliados3.png" alt=""> </article>
+                <article class="partners display_none"><img src="../assets/img/Aliados4.jpg" alt=""> </article>
+                <article class="partners display_none"><img src="../assets/img/Aliados3.png" alt=""> </article>
             </div>
         </section>
     </body>
