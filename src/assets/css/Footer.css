@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+footer{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    height: 482px;
+    justify-content: space-evenly;
+    background-color: #F5F5F5;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.info_titles{
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.info_text{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 50px;
+}
+
+
+.redes_sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #A32B2B;
+}
+
+.red_social{
+    width: 100px;
+}
+
+.metodos_pago{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.metodo{
+    width: 10%;
+}
+
+.visa{
+    width: 100px;
+}
+
+.master{
+    width: 100px;
+}
+
+.pse{
+    width: 75px;
+}
+
+.paypal{
+    width: 75px;
+}
+
+.mercado{
+    width: 90px;
+}
