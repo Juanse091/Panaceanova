@@ -72,3 +72,68 @@ footer{
 .mercado{
     width: 90px;
 }
+
+/*? APARTADO MOVIL "390 PIXELES" */
+
+@media (max-width: 500px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        height: 960px;
+        background-color: #F5F5F5;
+    }
+    
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 65px;
+    }
+
+    .info_titles{
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .info_text{
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+        line-height: 50px;
+    }
+
+    .redes_sociales{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #A32B2B;
+    }
+
+    .red_social{
+        width: 80px;
+    }
+
+    .metodos_pago{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .metodos_pago{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .metodo{
+        width: 100%;
+        padding-top: 20px;
+    }
+}
