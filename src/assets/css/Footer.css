@@ -80,7 +80,7 @@ footer{
         display: flex;
         flex-direction: column;
         /* border: 2px solid red; */
-        height: 960px;
+        height: 980px;
         background-color: #F5F5F5;
     }
     
@@ -112,6 +112,7 @@ footer{
         flex-direction: row;
         justify-content: center;
         background-color: #A32B2B;
+        margin-top: 25px;
     }
 
     .red_social{

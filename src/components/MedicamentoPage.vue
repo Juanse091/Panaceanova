@@ -6,7 +6,7 @@
             <i class="bi bi-chevron-left back_icon"></i>
         </div>
         <section class="medicamento">
-            <img src="../assets/img/DolexGripa.png" alt="#">
+            <img class="img_medicamento" src="../assets/img/DolexGripa.png" alt="#">
             <div class="info_medicamento">
                 <h1>Dolex Gripa</h1>
                 <div class="puntuacion">
