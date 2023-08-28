@@ -19,15 +19,16 @@
         </button>
       </div>
 
-      <div class="shop_container">
-        <button class="shoppingcart" style="border: none;">
-            <i class="bi bi-cart-fill shop_icon"></i>
-        </button>
-        <div class="counter">
-            <p class="quant">0</p>
+      <router-link to="/Carrito">
+        <div class="shop_container">
+          <button class="shoppingcart" style="border: none;">
+              <i class="bi bi-cart-fill shop_icon"></i>
+          </button>
+          <div class="counter">
+              <p class="quant">0</p>
+          </div>
         </div>
-      </div>
-
+      </router-link>
     </div>
 
   </header>
@@ -36,10 +37,13 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router';
+
   export default {
     name: 'NavBar',
-    props: {}
-  }
+    props: {},
+    components: { RouterLink }
+}
 </script>
 
 <style scoped>
