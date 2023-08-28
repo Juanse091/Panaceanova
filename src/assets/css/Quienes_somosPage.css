@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.back{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.btn_back > h2{
+    font-size: 35px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: black;
+}
+
+.back_icon{
+    font-size: 35px;
+    color: black;
+    padding-top: 2.2px;
+}
+
+.QS_info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 15%;
+}
+
+.QS_info>h1{
+    font-size: 48px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #A32B2B;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 25px;
+}
+
+.QS_info>h2{
+    font-size: 48px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #A32B2B;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 25px;
+}
+
+.QS_info>p{
+    font-size: 25px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: black;
+    display: flex;
+    text-align: left;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 500px) {
+    .back{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+
+    .btn_back > h2{
+        font-size: 20px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        color: black;
+    }
+    
+    .back_icon{
+        font-size: 15px;
+        color: black;
+        padding-top: 2.2px;
+    }
+
+    .QS_info{
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        width: 90%;
+        margin-top: 30px;
+        margin-left: 5%;
+    }
+
+    .QS_info>h1{
+        font-size: 28px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        color: #A32B2B;
+        display: flex;
+        justify-content: left;
+        padding-bottom: 25px;
+    }
+    
+    .QS_info>h2{
+        font-size: 28px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        color: #A32B2B;
+        display: flex;
+        justify-content: left;
+        padding-bottom: 25px;
+    }
+    
+    .QS_info>p{
+        font-size: 18px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        color: black;
+        display: flex;
+        text-align: justify;
+        padding-bottom: 80px;
+    }
+
+}

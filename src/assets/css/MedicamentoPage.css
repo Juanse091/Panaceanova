@@ -5,7 +5,7 @@
     justify-content: left;
     align-items: center;
     flex-direction: row-reverse;
-    margin-left: 12%;
+    margin-left: 8%;
     margin-top: 2%;
 }
 
@@ -216,14 +216,14 @@
     }
 
     .btn_back > h2{
-        font-size: 30px;
+        font-size: 20px;
         font-family: 'Montserrat';
         font-weight: 400;
         color: black;
     }
     
     .back_icon{
-        font-size: 25px;
+        font-size: 15px;
         color: black;
         padding-top: 2.2px;
     }

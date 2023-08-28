@@ -4,10 +4,14 @@
             <div class="nosotros">
                 <h2 class="info_titles">Nosotros</h2>
                 <a href="">
-                    <p class="info_text">¿Quienes Somos?</p>
+                    <router-link to="/Quienes_somos" class="info_text" style="text-decoration: none;"> 
+                        <p>¿Quienes Somos?</p> 
+                    </router-link>
                 </a>
                 <a href="">
-                    <p class="info_text">Preguntas Frecuentes</p>
+                    <router-link to="/PreguntasFrecuentes" class="info_text" style="text-decoration: none;"> 
+                        <p>Preguntas Frecuentes</p> 
+                    </router-link>
                 </a>
                 <a href="">
                     <p class="info_text">Politicas y terminos de uso</p>
