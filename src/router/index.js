@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from '../components/HomePage.vue'
-import  MedicamentoPage from '../components/MedicamentoPage.vue'
+import HomePage from '../views/HomePage.vue'
+import  MedicamentoPage from '../views/MedicamentoPage.vue'
 import Quienes_somosPage from '../views/Quienes_somosPage.vue'
 import PreguntasFrecuentesPage from '../views/PreguntasFrecuentesPage.vue'
 import CarritoPage from '../views/CarritoPage.vue'
@@ -28,7 +28,10 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition){
+    return savedPosition || {top:0}
+  }
 })
 
 export default router

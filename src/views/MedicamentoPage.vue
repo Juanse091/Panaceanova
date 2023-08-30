@@ -1,10 +1,11 @@
 <template>
     <NavBar></NavBar>
     <body>
-        <div class="back">
-            <router-link to="/" class="btn_back" style="text-decoration: none;"> <h2>Volver</h2> </router-link>
+
+        <router-link to="/" class="btn_back back" style="text-decoration: none;"> <h2>Volver</h2> 
             <i class="bi bi-chevron-left back_icon"></i>
-        </div>
+        </router-link>
+
         <section class="medicamento">
             <img class="img_medicamento" src="../assets/img/DolexGripa.png" alt="#">
             <div class="info_medicamento">
@@ -77,8 +78,8 @@
 </template>
 
 <script>
-    import NavBar from './NavBar.vue'
-    import Footer from './Footer.vue'
+    import NavBar from '../components/NavBar.vue'
+    import Footer from '../components/Footer.vue'
     export default {
         name: 'MedicamentoPage',
         props: {},
