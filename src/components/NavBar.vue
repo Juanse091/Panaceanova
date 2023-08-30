@@ -19,16 +19,12 @@
         </button>
       </div>
 
-      <router-link to="/Carrito">
         <div class="shop_container">
-          <button class="shoppingcart" style="border: none;">
-              <i class="bi bi-cart-fill shop_icon"></i>
-          </button>
+          <button class="shoppingcart" style="border: none;"> <router-link to="/Carrito"> <i class="bi bi-cart-fill shop_icon"></i> </router-link></button>
           <div class="counter">
               <p class="quant">0</p>
           </div>
         </div>
-      </router-link>
     </div>
 
   </header>

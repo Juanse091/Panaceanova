@@ -121,7 +121,7 @@ header{
 .shop_icon{
     font-size: 48.2px;
     color: #A32B2B;
-    position: absolute;
+    position: relative;
 }
 
 .counter{
