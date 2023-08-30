@@ -1,10 +1,10 @@
 <template>
     <NavBar></NavBar>
     <body>
-        <div class="back">
-            <router-link to="/" class="btn_back" style="text-decoration: none;"> <h2>Volver</h2> </router-link>
-            <i class="bi bi-chevron-left back_icon"></i>
-        </div>
+
+        <router-link to="/" style="text-decoration: none;"> 
+            <BackButton></BackButton>
+        </router-link>
 
         <section class="QS_info">
             <h1>¿Quiénes somos?</h1>
@@ -23,12 +23,14 @@
 <script>
     import NavBar from '../components/NavBar.vue'
     import Footer from '../components/Footer.vue'
+    import BackButton from '../components/BackButton.vue';
     export default {
         name: 'Quienes_somosPage',
         props: {},
         components: {
             NavBar,
-            Footer
+            Footer,
+            BackButton
         }
     }
 </script>

@@ -1,10 +1,11 @@
 <template>
     <NavBar></NavBar>
     <body>
-        <div class="back">
-            <router-link to="/" class="btn_back" style="text-decoration: none;"> <h2>Volver</h2> </router-link>
-            <i class="bi bi-chevron-left back_icon"></i>
-        </div>
+
+        <router-link to="/" style="text-decoration: none;"> 
+            <BackButton></BackButton>
+        </router-link>
+        
         <h1 class="cart_title">CARRITO</h1>
         <section class="resumen">
             <div class="cart_producto">
@@ -47,12 +48,14 @@
 <script>
     import NavBar from '../components/NavBar.vue'
     import Footer from '../components/Footer.vue'
+    import BackButton from '../components/BackButton.vue'
     export default {
         name: 'CarritoPage',
         props: {},
         components: {
             NavBar,
-            Footer
+            Footer,
+            BackButton
         }
     }
 </script>

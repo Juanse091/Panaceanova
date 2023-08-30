@@ -1,18 +1,18 @@
 <template>
     <NavBar></NavBar>
     <body>
-        <div class="back">
-            <router-link to="/" class="btn_back" style="text-decoration: none;"> <h2>Volver</h2> </router-link>
-            <i class="bi bi-chevron-left back_icon"></i>
-        </div>
+
+        <router-link to="/" style="text-decoration: none;"> 
+            <BackButton></BackButton>
+        </router-link>
 
         <h1 class="PF_title">PREGUNTAS FRECUENTES</h1>
-        <section class="Pregunta">
+        <section class="Pregunta" >
             <div class="titulo_pregunta">
                 <h2>¿Cómo realizo mi pedido?</h2>
-                <i class="bi bi-plus-lg expandir_icon"></i>
+                <i class="bi bi-plus-lg expandir_icon" v-on:click="expandir"></i>
             </div> 
-            <div class="Respuesta">
+            <div class="Respuesta" v-bind:style="{ display: this.expandido ? 'block' : 'none' }">
                 <p>Para hacer un pedido de medicamentos, sigue estos pasos:</p>
                 <p class="pasos">
                     1. Navega por nuestro catálogo de medicamentos y agrega los productos al carrito de compras.
@@ -80,19 +80,31 @@
     <Footer></Footer>
 </template>
 
-
 <script>
-    import NavBar from '../components/NavBar.vue'
-    import Footer from '../components/Footer.vue'
-    export default {
-        name: 'PreguntasFrecuentesPage',
-        props: {},
-        components: {
-            NavBar,
-            Footer
+import NavBar from '../components/NavBar.vue'
+import Footer from '../components/Footer.vue'
+import BackButton from '../components/BackButton.vue'
+
+export default {
+    name: 'PreguntasFrecuentesPage',
+    components: {
+        NavBar,
+        Footer,
+        BackButton
+    },
+    data() {
+        return {
+            expandido: false
+        };
+    },
+    methods: {
+        expandir() {
+            this.expandido = !this.expandido;
         }
     }
+};
 </script>
+
 
 <style scoped>
     @import '../assets/css/PreguntasFrecuentesPage.css';

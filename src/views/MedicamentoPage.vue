@@ -2,8 +2,8 @@
     <NavBar></NavBar>
     <body>
 
-        <router-link to="/" class="btn_back back" style="text-decoration: none;"> <h2>Volver</h2> 
-            <i class="bi bi-chevron-left back_icon"></i>
+        <router-link to="/" style="text-decoration: none;"> 
+            <BackButton></BackButton>
         </router-link>
 
         <section class="medicamento">
@@ -80,13 +80,15 @@
 <script>
     import NavBar from '../components/NavBar.vue'
     import Footer from '../components/Footer.vue'
+    import BackButton from '@/components/BackButton.vue';
     export default {
         name: 'MedicamentoPage',
         props: {},
         components: {
-            NavBar,
-            Footer
-        }
+    NavBar,
+    Footer,
+    BackButton
+}
     }
 </script>
 
