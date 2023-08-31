@@ -116,35 +116,6 @@
     border-radius: 38px;
 }
 
-.product{
-    display: flex;
-    flex-direction: column;
-    padding: 30px 50px;
-    /* border: 2px solid yellow; */
-    background: #F8F8F8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    gap: 3px;
-}
-
-.product > img{
-    margin-top: 30px;
-    width: 182px;
-    height: 60%;
-    object-fit: cover;
-}
-
-.btn_buy{
-    cursor: pointer;
-    border: none;
-    background-color: #A32B2B;
-    color: white;
-    height: 36px;
-    width: 100%;
-    border-radius: 16px;
-}
-
-
 .partners_section{
     height: 100%;
     /* background-color: red; */

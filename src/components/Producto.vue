@@ -26,8 +26,7 @@
     background: #F8F8F8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-    gap: 3px;
-    border: 2px solid red;
+    gap: 3px;   
 }
 
 .product > img{
@@ -64,7 +63,7 @@
 
 <script>
     export default {
-        name: 'BackButton',
+        name: 'Producto',
         props: {}
     }
 </script>

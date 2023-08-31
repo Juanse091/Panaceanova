@@ -8,23 +8,8 @@
         
         <h1 class="cart_title">CARRITO</h1>
         <section class="resumen">
-            <div class="cart_producto">
-                <div class="container_img_info">
-                    <img class="cart_img_producto" src="../assets/img/DolexGripa.png" alt="#">
-                    <div class="cart_info">
-                        <h2>Dolex Gripa</h2>
-                        <h3>$12.200</h3>
-                    </div>
-                </div>
-                <div class="container_cantidad_trash">
-                    <div class="cart_cantidad">
-                        <i class="bi bi-dash cart_minus_icon"></i>
-                        <input type="text" class="cart_quantity" maxlength="45" value="1">
-                        <i class="bi bi-plus-lg cart_plus_icon"></i>
-                    </div>
-                    <i class="bi bi-trash-fill cart_trash_icon"></i>
-                </div>
-            </div>
+            <ProductoCheckout></ProductoCheckout>
+            <ProductoCheckout></ProductoCheckout>
         </section>
 
         <div class="cart_line_container">
@@ -49,14 +34,16 @@
     import NavBar from '../components/NavBar.vue'
     import Footer from '../components/Footer.vue'
     import BackButton from '../components/BackButton.vue'
+    import ProductoCheckout from '../components/ProductoCheckout.vue'
     export default {
         name: 'CarritoPage',
         props: {},
         components: {
-            NavBar,
-            Footer,
-            BackButton
-        }
+    NavBar,
+    Footer,
+    BackButton,
+    ProductoCheckout,
+}
     }
 </script>
 
