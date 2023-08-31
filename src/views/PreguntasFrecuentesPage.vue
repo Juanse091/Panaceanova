@@ -8,10 +8,11 @@
 
         <h1 class="PF_title">PREGUNTAS FRECUENTES</h1>
 
-        <section class="Pregunta" >
+        <section class="Pregunta" v-on:click="expandir_1">
             <div class="titulo_pregunta">
                 <h2>¿Cómo realizo mi pedido? </h2>
-                <i class="bi bi-plus-lg expandir_icon" v-on:click="expandir_1"></i>
+                <i class="bi bi-plus-lg expandir_icon" v-if=" !expandido"></i>
+                <i class="bi bi-dash-lg expandir_icon" v-else></i>
             </div> 
             <div class="Respuesta" v-bind:style="{ display: this.expandido ? 'block' : 'none' }">
                 <p>Para hacer un pedido de medicamentos, sigue estos pasos:</p>
@@ -27,10 +28,11 @@
             </div>
         </section>
 
-        <section v-for="(section, index) in sections" :key="index" class="Pregunta" >
+        <section v-for="(section, index) in sections" :key="index" class="Pregunta" v-on:click="expandir(index)" >
             <div class="titulo_pregunta">
                 <h2>{{ section.title }}</h2>
-                <i class="bi bi-plus-lg expandir_icon" v-on:click="expandir(index)"></i>
+                <i class="bi bi-plus-lg expandir_icon" v-if=" !section.expandido"></i>
+                <i class="bi bi-dash-lg expandir_icon" v-else></i>
             </div> 
             <div class="Respuesta" v-bind:style="{ display: section.expandido ? 'block' : 'none' }">
                 <p>{{ section.p }}</p>           
@@ -62,8 +64,23 @@ export default {
                     expandido: false
                 },
                 {
-                    title: "¿Sexo pene?",
-                    p: "Ay papi santi quiere",
+                    title: "¿Qué métodos de pago aceptan?",
+                    p: "Aceptamos una variedad de métodos de pago seguros y convenientes para que puedas realizar tus compras sin preocupaciones. Entre los métodos de pago que aceptamos se incluyen: Visa, Mastercard, PSE, PayPal y Mercado Pago",
+                    expandido: false
+                },
+                {
+                    title: "¿Qué hago si tengo problemas con mi pedido?",
+                    p: "Si encuentras algún inconveniente con tu pedido, estamos aquí para ayudarte. Te recomendamos que te pongas en contacto con nuestro equipo de atención al cliente. Puedes enviar un correo electrónico a la dirección proporcionada en la sección de 'Información de contacto' en la parte inferior de nuestra página, o también puedes llamarnos al número de teléfono indicado para asistencia inmediata. Nuestro equipo está disponible para resolver cualquier problema que puedas tener y asegurarse de que tu experiencia de compra sea lo más fluida y satisfactoria posible.",
+                    expandido: false
+                },
+                {
+                    title: "¿Ofrecen asesoramiento medico con los medicamentos?",
+                    p: "En PanaceaNova Pharmacy, queremos asegurarte que brindamos una amplia variedad de medicamentos de alta calidad. Sin embargo, es importante destacar que no ofrecemos asesoramiento médico con respecto a los medicamentos que vendemos. Te recomendamos encarecidamente que busques la orientación de un profesional de la salud o médico calificado para obtener información y recomendaciones médicas específicas.",
+                    expandido: false
+                },
+                {
+                    title: "¿Puedo comprar medicamentos prescritos?",
+                    p: "En PanaceaNova Pharmacy, ofrecemos la venta de medicamentos prescritos exclusivamente a aquellos que estén asociados a nuestro consorcio médico y bajo la condición de que hayan sido recetados por un médico autorizado. Entendemos la importancia de la seguridad y la salud de nuestros clientes, por lo que es fundamental que los medicamentos se adquieran de acuerdo con las pautas médicas adecuadas. Si cumples con estos criterios, estaremos encantados de proporcionarte los medicamentos necesarios para cuidar de tu bienestar.",
                     expandido: false
                 }
             ]
