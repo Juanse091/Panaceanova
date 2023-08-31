@@ -38,36 +38,9 @@
                 <div class="arrow_container">
                     <i class="bi bi-chevron-compact-left arrow"></i>
                 </div>
-                <article class="product">
-                    <img src="../assets/img/Acetaminofen.png" alt="">
-                    <hr>
-                    <p>Acetaminofén</p>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <p>$16.500</p>
-                    <router-link  to="/medicamentos">
-                        <button class="btn_buy">Comprar</button>
-                    </router-link>
-                </article>
-                <article class="product">
-                    <img src="../assets/img/DolexGripa.png" alt="">
-                    <hr> 
-                    <p>Dolex gripa</p>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <p>$12.200</p>
-                    <router-link to="/medicamentos">
-                        <button class="btn_buy">Comprar</button>
-                    </router-link>
-                </article>
-                <article class="product display_none">
-                    <img src="../assets/img/Olmetec.png" alt="">
-                    <hr>
-                    <p>Olmetec 20mg</p>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <p>$24.350</p>
-                    <router-link to="/medicamentos">
-                        <button class="btn_buy">Comprar</button>
-                    </router-link>
-                </article>
+                <Producto></Producto>
+                <Producto></Producto>
+                <Producto></Producto>
                 <div class="arrow_container">
                     <i class="bi bi-chevron-compact-right arrow"></i>
                 </div>
@@ -90,13 +63,15 @@
 <script>
     import NavBar from '../components/NavBar.vue'
     import Footer from '../components/Footer.vue'
+    import Producto from '../components/Producto.vue';
     export default {
         name: 'HomePage',
         props: {},
         components: {
-            NavBar,
-            Footer
-        }
+    NavBar,
+    Footer,
+    Producto,
+}
     }
 </script>
 
