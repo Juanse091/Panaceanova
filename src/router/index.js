@@ -5,6 +5,7 @@ import Quienes_somosPage from '../views/Quienes_somosPage.vue'
 import PreguntasFrecuentesPage from '../views/PreguntasFrecuentesPage.vue'
 import CarritoPage from '../views/CarritoPage.vue'
 import CategoriePage from '../views/CategoriePage'
+import ProductoAdminPage from '../views/ProductoAdminPage'
 
 const routes = [
   {
@@ -27,6 +28,9 @@ const routes = [
   },
   {
     path: '/Categorie', component: CategoriePage
+  },
+  {
+    path: '/ProductoAdminPage', component: ProductoAdminPage
   }
 ]
 

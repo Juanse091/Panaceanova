@@ -56,14 +56,14 @@
 
 .cart_info>h2{
     color: black;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 32px;
     font-weight: 500;
 }
 
 .cart_info>h3{
     color: #A32B2B;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 36px;
     font-weight: 500;
 }
@@ -149,14 +149,14 @@
     
     .cart_info>h2{
         color: black;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-size: 20px;
         font-weight: 500;
     }
     
     .cart_info>h3{
         color: #A32B2B;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-size: 26px;
         font-weight: 500;
     }

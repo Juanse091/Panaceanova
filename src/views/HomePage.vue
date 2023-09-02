@@ -12,7 +12,7 @@
                 </div>
                 <article class="categories">
                     <img src="../assets/img/medicamentos.png" alt="">
-                    <router-link  to="/categorie" style="text-decoration: none;">
+                    <router-link  to="/ProductoAdminPage" style="text-decoration: none;">
                         <p class="txt_categorie"> Categoria 1 </p>
                     </router-link>
                 </article>
