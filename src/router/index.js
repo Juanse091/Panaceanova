@@ -4,6 +4,7 @@ import  MedicamentoPage from '../views/MedicamentoPage.vue'
 import Quienes_somosPage from '../views/Quienes_somosPage.vue'
 import PreguntasFrecuentesPage from '../views/PreguntasFrecuentesPage.vue'
 import CarritoPage from '../views/CarritoPage.vue'
+import CategoriePage from '../views/CategoriePage'
 
 const routes = [
   {
@@ -23,6 +24,9 @@ const routes = [
   },
   {
     path: '/Carrito', component: CarritoPage
+  },
+  {
+    path: '/Categorie', component: CategoriePage
   }
 ]
 

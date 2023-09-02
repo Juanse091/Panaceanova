@@ -117,6 +117,102 @@
     margin-left: 60px;
     color: rgba(141, 141, 141, 1);
 }
+
+@media (max-width: 500px) {
+    
+    .resumen{
+        background: #F5F5F5;
+        border-radius: 15px;
+        width: 96%;
+        margin-left: 2%;
+        margin-bottom: 15px;
+    }
+    
+    .container_img_info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 20px;
+    }
+    
+    .cart_img_producto{
+        height: auto;
+        width: 90px;
+    }
+    
+    .cart_info{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        margin-left: 15px;
+    }
+    
+    .cart_info>h2{
+        color: black;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .cart_info>h3{
+        color: #A32B2B;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    
+    .container_cantidad_trash{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 10px;
+    }
+    
+    .cart_cantidad{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .cart_minus_icon{
+        width: 21px;
+        height: 21px;
+        font-size: 20px;
+        color:white;
+        background-color: rgba(163, 43, 43, 0.76);
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    
+    .cart_plus_icon{
+        width: 21px;
+        height: 21px;
+        font-size: 20px;
+        color:white;
+        background-color: #A32B2B;
+        border-radius: 50%;
+        margin-left: 15px;
+    }
+    
+    .cart_quantity{
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 15px;
+        font-weight: 400;
+        color: black;
+    }
+    
+    .cart_trash_icon{
+        font-size: 25px;
+        margin-top: 3px;
+        margin-left: 10px;
+        color: rgba(141, 141, 141, 1);
+    }
+ 
+}
+
 </style>
 
 <script>

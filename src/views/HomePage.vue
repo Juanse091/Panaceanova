@@ -12,7 +12,9 @@
                 </div>
                 <article class="categories">
                     <img src="../assets/img/medicamentos.png" alt="">
-                    <p class="txt_categorie"> Categoria 1 </p>
+                    <router-link  to="/categorie" style="text-decoration: none;">
+                        <p class="txt_categorie"> Categoria 1 </p>
+                    </router-link>
                 </article>
                 <article class="categories">
                     <img src="../assets/img/medicamentos.png" alt="">
@@ -33,14 +35,14 @@
         </section>
 
         <section class="featured_section">
-            <h2 class="title"> PRODUCTOS DESTACADOS</h2>
+            <h2 class="custom-font title"> PRODUCTOS DESTACADOS</h2>
             <div class="fp_container">
                 <div class="arrow_container">
                     <i class="bi bi-chevron-compact-left arrow"></i>
                 </div>
                 <Producto></Producto>
                 <Producto></Producto>
-                <Producto></Producto>
+                <Producto class="display_none"></Producto>
                 <div class="arrow_container">
                     <i class="bi bi-chevron-compact-right arrow"></i>
                 </div>
@@ -48,7 +50,7 @@
         </section>
     
         <section class="partners_section">
-            <h2 class="title">NUESTROS SOCIOS</h2>
+            <h2 class="custom-font title">NUESTROS SOCIOS</h2>
             <div class="partners_container">
                 <article class="partners"><img src="../assets/img/Logo.png" alt=""> </article>
                 <article class="partners"><img src="../assets/img/Aliados2.jpg" alt=""> </article>

@@ -7,10 +7,9 @@
         </router-link>
         
         <h1 class="cart_title">CARRITO</h1>
-        <section class="resumen">
-            <ProductoCheckout></ProductoCheckout>
-            <ProductoCheckout></ProductoCheckout>
-        </section>
+
+        <ProductoCheckout></ProductoCheckout>
+        <ProductoCheckout></ProductoCheckout>
 
         <div class="cart_line_container">
             <hr class="cart_line_div">

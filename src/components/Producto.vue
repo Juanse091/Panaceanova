@@ -2,7 +2,7 @@
     <article class="product">
         <img src="../assets/img/DolexGripa.png" alt="">
         <hr>
-        <p>Dolex Gripa</p>
+        <p class="product_name">Dolex Gripa</p>
         <div class="puntuacion">
             <i class="bi bi-star-fill star_icon"></i>
             <i class="bi bi-star-fill star_icon"></i>
@@ -36,6 +36,18 @@
     object-fit: cover;
 }
 
+.product_name{
+    font-family: 'Montserrat';
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.product>p{
+    display: flex;
+    justify-content: left;
+    
+}
+
 .btn_buy{
     cursor: pointer;
     border: none;
@@ -44,19 +56,60 @@
     height: 36px;
     width: 100%;
     border-radius: 16px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    margin-top: 5px;
 }
 
 .puntuacion{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
 .star_icon{
-    font-size: 25px;
+    font-size: 18px;
     color: #A32B2B;
-    padding-right: 6px;
+    padding-right: 4px;
+}
+
+@media (max-width: 500px) {
+    .product{
+        padding: 20px;
+        justify-content: center;
+        border-radius: 15px;
+        /* align-items: center; */
+        font-size: 10px;
+    }
+
+    .product > img{
+        position: relative;
+        width: 53px;
+        height: 58px;
+        margin-top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .product_name{
+        font-family: 'Montserrat';
+        font-size: 90%;
+        font-weight: 600;
+    }
+    .display_none{
+        display: none;
+    }    
+    .btn_buy{
+        font-size: 9px;
+        height: 15px;
+        border-radius: 6px;
+    }
+
+    .star_icon{
+        font-size: 10px;
+        color: #A32B2B;
+        padding-right: 1px;
+    }
 }
 
 </style>
