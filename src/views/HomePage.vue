@@ -10,24 +10,11 @@
                 <div class="arrow_container">
                     <i class="bi bi-chevron-compact-left arrow"></i>
                 </div>
-                <article class="categories">
-                    <img src="../assets/img/medicamentos.png" alt="">
-                    <router-link  to="/Categorie" style="text-decoration: none;">
-                        <p class="txt_categorie"> Categoria 1 </p>
-                    </router-link>
-                </article>
-                <article class="categories">
-                    <img src="../assets/img/medicamentos.png" alt="">
-                    <p class="txt_categorie"> Categoria 2 </p>
-                </article>
-                <article class="categories display_none">
-                    <img src="../assets/img/medicamentos.png" alt="">
-                    <p class="txt_categorie"> Categoria 3 </p>
-                </article>
-                <article class="categories display_none">
-                    <img src="../assets/img/medicamentos.png" alt="">
-                    <p class="txt_categorie"> Categoria 4 </p>
-                </article>
+                
+                <CategorieBox></CategorieBox>
+                <CategorieBox></CategorieBox>
+                <CategorieBox class="display_none"></CategorieBox>
+                <CategorieBox class="display_none"></CategorieBox>
                 <div class="arrow_container">
                     <i class="bi bi-chevron-compact-right arrow"></i>
                 </div>
@@ -66,6 +53,7 @@
     import NavBar from '../components/NavBar.vue'
     import Footer from '../components/Footer.vue'
     import Producto from '../components/Producto.vue';
+    import CategorieBox from '@/components/CategorieBox.vue';
     export default {
         name: 'HomePage',
         props: {},
@@ -73,6 +61,7 @@
     NavBar,
     Footer,
     Producto,
+    CategorieBox
 }
     }
 </script>
