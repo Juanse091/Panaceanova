@@ -6,6 +6,7 @@ import PreguntasFrecuentesPage from '../views/PreguntasFrecuentesPage.vue'
 import CarritoPage from '../views/CarritoPage.vue'
 import CategoriePage from '../views/CategoriePage'
 import ProductoAdminPage from '../views/ProductoAdminPage'
+import UsuarioAdminPage from '../views/UsuarioAdminPage'
 
 const routes = [
   {
@@ -31,6 +32,9 @@ const routes = [
   },
   {
     path: '/ProductoAdminPage', component: ProductoAdminPage
+  },
+  {
+    path: '/UsuarioAdminPage', component: UsuarioAdminPage
   }
 ]
 

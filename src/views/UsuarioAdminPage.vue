@@ -17,19 +17,17 @@
             <label for="categorie"></label>
             <select name="categorie" id="categorie" class="select_categorie">
                 <option value="" disabled selected hidden>Categorías</option>
-                <option value="medicamentos">Medicamentos</option>
-                <option value="salud_sexual">Salud sexual</option>
-                <option value="asistencia_medica">Asistencia Medica</option>
-                <option value="bebes">Bebes</option>
+                <option value="Afiliado">Afiliado</option>
+                <option value="Particular">Particular</option>
+                <option value="Consorcio">Consorcio</option>
             </select>
-
             <button class="add_product">
-                <p>Agregar Producto</p>
+                <p>Agregar Usuario</p>
             </button>
         </section>
 
-        <ProductoAdmin></ProductoAdmin>
-        <ProductoAdmin></ProductoAdmin>
+        <UsersAdmin></UsersAdmin>
+        <UsersAdmin></UsersAdmin>
         
     </body>
     <Footer></Footer>
@@ -40,19 +38,19 @@
     import NavBar from '../components/NavBar.vue'
     import Footer from '../components/Footer.vue'
     import BackButton from '../components/BackButton.vue';
-    import ProductoAdmin from '@/components/ProductoAdmin.vue';
+    import UsersAdmin from '@/components/UsersAdmin.vue';
     export default {
-        name: 'ProductoAdminPage',
+        name: 'UsuarioAdminPage',
         props: {},
         components: {
     NavBar,
     Footer,
     BackButton,
-    ProductoAdmin,
+    UsersAdmin
 }
     }
 </script>
 
 <style scoped>
-    @import '../assets/css/ProductoAdminPage.css';
+    @import '../assets/css/UsuarioAdminPage.css';
 </style>
