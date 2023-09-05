@@ -8,6 +8,7 @@ import CategoriePage from '../views/CategoriePage'
 import ProductoAdminPage from '../views/ProductoAdminPage'
 import UsuarioAdminPage from '../views/UsuarioAdminPage'
 import Login from '../views/Login'
+import Register from '../views/Register'
 
 const routes = [
   {
@@ -39,6 +40,9 @@ const routes = [
   },
   {
     path: '/Login', component: Login
+  },
+  {
+    path: '/Register', component: Register
   }
 ]
 
