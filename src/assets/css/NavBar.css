@@ -97,6 +97,7 @@ header{
     color: #A32B2B;
     position: absolute;
     right: 0%;
+    top: 0%;
 }
 
 .shop_container{
@@ -201,7 +202,7 @@ header{
     
     .login_icon{
         font-size: 25px;
-        left: 0;
+        left: -20px;
     }
     
     .shop_container{

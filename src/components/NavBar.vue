@@ -12,12 +12,14 @@
     </div>
 
     <div class="log">
-      <div class="login_container">
-        <button class="login" style="border: none;">
-          <p class="texto_login">Iniciar sesión</p>
-          <i class="bi bi-person-circle login_icon"></i>
-        </button>
-      </div>
+      <router-link to="/Login" style="text-decoration: none;">
+        <div class="login_container">
+            <button class="login" style="border: none;">
+              <p class="texto_login">Iniciar sesión</p>
+              <i class="bi bi-person-circle login_icon"></i>
+            </button>
+        </div>
+      </router-link>
 
         <div class="shop_container">
           <button class="shoppingcart" style="border: none;"> <router-link to="/Carrito"> <i class="bi bi-cart-fill shop_icon"></i> </router-link></button>
