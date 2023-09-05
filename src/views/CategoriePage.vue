@@ -1,44 +1,40 @@
 <template>
-    <div>
-        <NavBar></NavBar>
+    <NavBar></NavBar>
+    <router-link to="/" style="text-decoration: none;">
+        <BackButton></BackButton>
+    </router-link>
 
-        <body>
-            <router-link to="/" style="text-decoration: none;">
-                <BackButton></BackButton>
-            </router-link>
+    <h1 class="categorie_title">MEDICAMENTOS</h1>
 
-            <h1 class="categorie_title">MEDICAMENTOS</h1>
+    <section class="content">
 
-            <section class="content">
-
-            <section class="filtros">
-                <h2>Filtros</h2>
-                <div class="catg" v-for="(section, sectionIndex) in sections" :key="sectionIndex">
-                    <div class="catg_title" v-on:click="expandFilter(sectionIndex)">
-                        <h3>{{ section.title }}</h3>
-                        <i class="bi bi-caret-right-fill" v-if="!section.expanded"></i>
-                        <i class="bi bi-caret-down-fill" v-else></i>
-                    </div>
-                    <div class="catg_opciones" v-bind:style="{ display: section.expanded ? 'block' : 'none' }">
-                        <label v-for="(option, optionIndex) in section.options" :key="optionIndex">
-                            <input type="radio" v-model="option.selected" :name="section.title" :disabled="isOptionDisabled(sectionIndex, optionIndex)">
-                            {{ option.label }}
-                        </label>
-                    </div>
+        <section class="filtros">
+            <h2>Filtros</h2>
+            <div class="catg" v-for="(section, sectionIndex) in sections" :key="sectionIndex">
+                <div class="catg_title" v-on:click="expandFilter(sectionIndex)">
+                    <h3>{{ section.title }}</h3>
+                    <i class="bi bi-caret-right-fill" v-if="!section.expanded"></i>
+                    <i class="bi bi-caret-down-fill" v-else></i>
                 </div>
-                <button class="filtro_btn" @click="limpiarFiltros">
-                    <p>Limpiar Filtros</p>
-                </button>
-            </section>
-            <section class="display_productos">
-                <div class="row"> <!-- Aqui van los productos :o -->
+                <div class="catg_opciones" v-bind:style="{ display: section.expanded ? 'block' : 'none' }">
+                    <label v-for="(option, optionIndex) in section.options" :key="optionIndex">
+                        <input type="radio" v-model="option.selected" :name="section.title"
+                            :disabled="isOptionDisabled(sectionIndex, optionIndex)">
+                        {{ option.label }}
+                    </label>
                 </div>
-            </section>
-
+            </div>
+            <button class="filtro_btn" @click="limpiarFiltros">
+                <p>Limpiar Filtros</p>
+            </button>
         </section>
-        </body>
-        <Footer></Footer>
-    </div>
+        <section class="display_productos">
+            <div class="row"> <!-- Aqui van los productos :o -->
+            </div>
+        </section>
+
+    </section>
+    <Footer></Footer>
 </template>
   
 <script>
@@ -51,11 +47,11 @@ export default {
     name: 'CategoriePage',
     props: {},
     components: {
-    NavBar,
-    Footer,
-    BackButton,
-    Producto
-},
+        NavBar,
+        Footer,
+        BackButton,
+        Producto
+    },
     data() {
         return {
             sections: [

@@ -1,44 +1,41 @@
 <template>
     <NavBar></NavBar>
-    <body>
+    <router-link to="/" style="text-decoration: none;">
+        <BackButton></BackButton>
+    </router-link>
 
-        <router-link to="/" style="text-decoration: none;"> 
-            <BackButton></BackButton>
-        </router-link>
+    <h1 class="PF_title">PREGUNTAS FRECUENTES</h1>
 
-        <h1 class="PF_title">PREGUNTAS FRECUENTES</h1>
+    <section class="Pregunta" v-on:click="expandir_1">
+        <div class="titulo_pregunta">
+            <h2>¿Cómo realizo mi pedido? </h2>
+            <i class="bi bi-plus-lg expandir_icon" v-if="!expandido"></i>
+            <i class="bi bi-dash-lg expandir_icon" v-else></i>
+        </div>
+        <div class="Respuesta" v-bind:style="{ display: this.expandido ? 'block' : 'none' }">
+            <p>Para hacer un pedido de medicamentos, sigue estos pasos:</p>
+            <p class="pasos">
+                1. Navega por nuestro catálogo de medicamentos y agrega los productos al carrito de compras.
+                <br>
+                2. Una vez que hayas seleccionado tus productos, ve al carrito y revisa los artículos agregados.
+                <br>
+                3. Haz clic en "Ir al checkout" y proporciona la información de envío y pago necesaria.
+                <br>
+                4. Revisa y confirma tu pedido. ¡Listo! Recibirás un correo de confirmación con los detalles de tu pedido.
+            </p>
+        </div>
+    </section>
 
-        <section class="Pregunta" v-on:click="expandir_1">
-            <div class="titulo_pregunta">
-                <h2>¿Cómo realizo mi pedido? </h2>
-                <i class="bi bi-plus-lg expandir_icon" v-if=" !expandido"></i>
-                <i class="bi bi-dash-lg expandir_icon" v-else></i>
-            </div> 
-            <div class="Respuesta" v-bind:style="{ display: this.expandido ? 'block' : 'none' }">
-                <p>Para hacer un pedido de medicamentos, sigue estos pasos:</p>
-                <p class="pasos">
-                    1. Navega por nuestro catálogo de medicamentos y agrega los productos al carrito de compras.
-                    <br>
-                    2. Una vez que hayas seleccionado tus productos, ve al carrito y revisa los artículos agregados.
-                    <br>
-                    3. Haz clic en "Ir al checkout" y proporciona la información de envío y pago necesaria.
-                    <br>
-                    4. Revisa y confirma tu pedido. ¡Listo! Recibirás un correo de confirmación con los detalles de tu pedido.
-                </p>             
-            </div>
-        </section>
-
-        <section v-for="(section, index) in sections" :key="index" class="Pregunta" v-on:click="expandir(index)" >
-            <div class="titulo_pregunta">
-                <h2>{{ section.title }}</h2>
-                <i class="bi bi-plus-lg expandir_icon" v-if=" !section.expandido"></i>
-                <i class="bi bi-dash-lg expandir_icon" v-else></i>
-            </div> 
-            <div class="Respuesta" v-bind:style="{ display: section.expandido ? 'block' : 'none' }">
-                <p>{{ section.p }}</p>           
-            </div>
-        </section>
-    </body>
+    <section v-for="(section, index) in sections" :key="index" class="Pregunta" v-on:click="expandir(index)">
+        <div class="titulo_pregunta">
+            <h2>{{ section.title }}</h2>
+            <i class="bi bi-plus-lg expandir_icon" v-if="!section.expandido"></i>
+            <i class="bi bi-dash-lg expandir_icon" v-else></i>
+        </div>
+        <div class="Respuesta" v-bind:style="{ display: section.expandido ? 'block' : 'none' }">
+            <p>{{ section.p }}</p>
+        </div>
+    </section>
     <Footer></Footer>
 </template>
 
@@ -87,7 +84,7 @@ export default {
         };
     },
     methods: {
-        expandir_1(){
+        expandir_1() {
             this.expandido = !this.expandido;
         },
         expandir(index) {
@@ -99,5 +96,5 @@ export default {
 
 
 <style scoped>
-    @import '../assets/css/PreguntasFrecuentesPage.css';
+@import '../assets/css/PreguntasFrecuentesPage.css';
 </style>
