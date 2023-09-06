@@ -9,6 +9,8 @@ import ProductoAdminPage from '../views/ProductoAdminPage'
 import UsuarioAdminPage from '../views/UsuarioAdminPage'
 import Login from '../views/Login'
 import Register from '../views/Register'
+import MisPedidosPage from '../views/MisPedidosPage'
+import PedidoStatusPage from '../views/PedidoStatusPage'
 
 const routes = [
   {
@@ -43,6 +45,13 @@ const routes = [
   },
   {
     path: '/Register', component: Register
+  },
+  {
+    path: '/MisPedidos', component: MisPedidosPage
+  }
+  ,
+  {
+    path: '/PedidoStatus', component: PedidoStatusPage
   }
 ]
 

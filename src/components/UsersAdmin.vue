@@ -6,7 +6,7 @@
                 <div class="afiliado_info">
                     <h2>Andrés León</h2>
                     <div class="afiliado_id">
-                        <h2>ID: </h2>
+                        <h2>ID:&nbsp</h2>
                         <h2>1005260550</h2>
                     </div>
                 </div>

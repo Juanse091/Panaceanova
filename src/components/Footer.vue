@@ -23,7 +23,7 @@
                 <p class="info_text">+57 3228324910</p>
             </div>
             <div class="encuentranos">
-                <h2 class="info_titles">Ecuéntranos</h2>
+                <h2 class="info_titles">Encuéntranos</h2>
                 <p class="info_text">Cra. 68c Bis A #37b Sur-74 a 37b Sur-2 <br> Bogotá - Colombia</p>
             </div>
         </section>

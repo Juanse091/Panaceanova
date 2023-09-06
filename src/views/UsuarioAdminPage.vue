@@ -42,7 +42,7 @@ export default {
         NavBar,
         Footer,
         BackButton,
-        UsersAdmin
+        UsersAdmin,
     }
 }
 </script>
