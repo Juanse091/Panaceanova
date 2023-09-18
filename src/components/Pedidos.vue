@@ -1,24 +1,26 @@
 <template>
     <section class="pedido_container">
-        <div class="pedido">
-            <div class="containerpedido_img_info">
-                <i class="bi bi-box-seam-fill pedido_icon"></i>
-                <div class="pedido_info">
-                    <div class="pedido_id">
-                        <h2>Pedido:&nbsp</h2>
-                        <h2>ASH1897W</h2>
-                    </div>
-                    <div class="pedido_date">
-                        <h2>Realizado:&nbsp</h2>
-                        <h2>05/10/2023</h2>
+        <router-link to="/PedidoStatus" style="text-decoration: none;">
+            <div class="pedido">
+                <div class="containerpedido_img_info">
+                    <i class="bi bi-box-seam-fill pedido_icon"></i>
+                    <div class="pedido_info">
+                        <div class="pedido_id">
+                            <h2>Pedido:&nbsp</h2>
+                            <h2>ASH1897W</h2>
+                        </div>
+                        <div class="pedido_date">
+                            <h2>Realizado:&nbsp</h2>
+                            <h2>05/10/2023</h2>
+                        </div>
                     </div>
                 </div>
+                <div class="pedido_status">
+                    <h2>Estado:&nbsp</h2>
+                    <h2>Enviado</h2>
+                </div>
             </div>
-            <div class="pedido_status">
-                <h2>Estado:&nbsp</h2>
-                <h2>Enviado</h2>
-            </div>
-        </div>
+        </router-link>
     </section>
 </template>
 

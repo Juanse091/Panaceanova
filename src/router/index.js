@@ -11,6 +11,9 @@ import Login from '../views/Login'
 import Register from '../views/Register'
 import MisPedidosPage from '../views/MisPedidosPage'
 import PedidoStatusPage from '../views/PedidoStatusPage'
+import AdminHubPage from '../views/AdminHubPage'
+import AfiliadoHubPage from '../views/AfiliadoHubPage'
+import ParticularHubPage from '../views/ParticularHubPage'
 
 const routes = [
   {
@@ -48,10 +51,18 @@ const routes = [
   },
   {
     path: '/MisPedidos', component: MisPedidosPage
-  }
-  ,
+  },
   {
     path: '/PedidoStatus', component: PedidoStatusPage
+  },
+  {
+    path: '/AdminHub', component: AdminHubPage
+  },
+  {
+    path: '/AfiliadoHub', component: AfiliadoHubPage
+  },
+  {
+    path: '/ParticularHub', component: ParticularHubPage
   }
 ]
 
