@@ -64,6 +64,12 @@
     background-image: url("../img/Envios_hub.jpg");
 }
 
+.particularhub_logout::before{
+    background-size: 110% 60%;
+    background-repeat: no-repeat;
+    background-image: url("../img/Exit.jpg");
+}
+
 .afiliadohub_card:hover .afiliadohub_description{
     color: #fff;
     transition-delay: 0ms;
@@ -106,6 +112,10 @@
     }
     
     .afiliadohub_envios::before{
+        background-size: 100% 30%;
+    }
+
+    .particularhub_logout::before{
         background-size: 100% 30%;
     }
 

@@ -12,8 +12,12 @@
             <p class="particularhub_description">REVISA TUS PEDIDOS Y EL STATUS DE ESTOS</p>
         </router-link>
 
-    </section>
+        <router-link class="particularhub_card particularhub_logout" to="/">
+            <h2>SALIR</h2>
+            <p class="particularhub_description">CIERRA TU SESIÓN</p>
+        </router-link>
 
+    </section>
 
     <Footer></Footer>
 </template>

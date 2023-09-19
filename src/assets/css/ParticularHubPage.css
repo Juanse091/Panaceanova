@@ -58,6 +58,12 @@
     background-image: url("../img/Envios_hub.jpg");
 }
 
+.particularhub_logout::before{
+    background-size: 110% 60%;
+    background-repeat: no-repeat;
+    background-image: url("../img/Exit.jpg");
+}
+
 .particularhub_card:hover .particularhub_description{
     color: #fff;
     transition-delay: 0ms;
@@ -100,6 +106,10 @@
     }
     
     .particularhub_envios::before{
+        background-size: 100% 30%;
+    }
+
+    .particularhub_logout::before{
         background-size: 100% 30%;
     }
 

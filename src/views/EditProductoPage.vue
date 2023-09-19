@@ -43,11 +43,11 @@
                 <td>Categoria</td>
                 <td>
                     <select name="Categoria">
-                        <option value="salud_medicamentos">Salud y Medicamentos</option>
-                        <option value="bienestar_sexual">Bienestar Sexual</option>
-                        <option value="asistencia_medica">Asistencia Medica</option>
-                        <option value="cuidado_bebe">Cuidado del bebé</option>
-                        <option value="cuidado_personal">Cuidado Personal</option>
+                        <option value=1>Salud y Medicamentos</option>
+                        <option value=2>Bienestar Sexual</option>
+                        <option value=3>Asistencia Medica</option>
+                        <option value=4>Cuidado del bebé</option>
+                        <option value=5>Cuidado Personal</option>
                     </select>
                 </td>
             </tr>
@@ -136,65 +136,65 @@ export default {
     data() {
         return {
             Tipos: [
-                { value: "incontinencia", label: "Medicamentos para la Incontinencia" },
-                { value: "antirretrovirales", label: "Antirretrovirales" },
-                { value: "oftalmicos", label: "Oftálmicos" },
-                { value: "dermatologicos", label: "Dermatológicos" },
-                { value: "hipoglucemiantes_orales", label: "Hipoglucemiantes orales" },
-                { value: "antihipertensivos", label: "Antihipertensivos" },
-                { value: "acido_peptica", label: "Enfermedad ácido péptica" },
-                { value: "tiroides", label: "Tiroides" },
-                { value: "hipolipemiantes", label: "Hipolipemiantes" },
-                { value: "antialergicos_antihistamicos", label: "Antialérgicos y Antihistamínicos" },
-                { value: "respiratorios", label: "Respiratorios" },
-                { value: "hipotiroidismo", label: "Hipotiroidismo" },
-                { value: "insulinas", label: "Insulinas" },
-                { value: "sistema_nervioso", label: "Sistema Nervioso" },
-                { value: "anticoagulantes", label: "Anticoagulantes" },
-                { value: "urologicos", label: "Urológicos" },
-                { value: "antiparkinsonianos", label: "Antiparkinsonianos" },
-                { value: "antiacidos", label: "Antiácidos" },
-                { value: "hepatitis", label: "Antivirales para la Hepatitis" },
-                { value: "menopausia", label: "Menopausia" },
-                { value: "antiemeticos", label: "Antieméticos" },
-                { value: "corticoesteroides_topicos", label: "Corticosteroides Tópicos" },
-                { value: "antiepilepticos", label: "Antiepilépticos" },
-                { value: "antitiroides", label: "Antitiroides" },
-                { value: "aines", label: "AINEs" },
-                { value: "osteoporosis", label: "Osteoporosis" },
-                { value: "vitaminas_minerales", label: "Vitaminas y minerales" },
-                { value: "trastornos_sueño", label: "Trastornos del Sueño" },
-                { value: "anticonvulsivantes", label: "Anticonvulsivantes" },
-                { value: "glaucoma", label: "Glaucoma" },
-                { value: "antidepresivos", label: "Antidepresivos" },
-                { value: "analgesicos", label: "Analgésicos" },
-                { value: "antiinfecciosos_urinarios", label: "Antiinfecciosos urinarios" },
-                { value: "epoc", label: "EPOC" },
-                { value: "antifungicos", label: "Antifúngicos" },
-                { value: "inhaladores_nasales", label: "Inhaladores nasales" },
-                { value: "antihiperglucemiantes", label: "Antihiperglucemiantes" },
-                { value: "antibioticos", label: "Antibióticos" },
-                { value: "ansioliticos", label: "Ansiolíticos" }
+                { value: 1, label: "Medicamentos para la Incontinencia" },
+                { value: 2, label: "Antirretrovirales" },
+                { value: 3, label: "Oftálmicos" },
+                { value: 4, label: "Dermatológicos" },
+                { value: 5, label: "Hipoglucemiantes orales" },
+                { value: 6, label: "Antihipertensores" },
+                { value: 7, label: "Enfermedad ácido péptica" },
+                { value: 8, label: "Tiroides" },
+                { value: 9, label: "Hipolipemiantes" },
+                { value: 10, label: "Antialérgicos y Antihistamínicos" },
+                { value: 11, label: "Respiratorios" },
+                { value: 12, label: "Hipotiroidismo" },
+                { value: 13, label: "Insulinas" },
+                { value: 14, label: "Sistema Nervioso" },
+                { value: 15, label: "Anticoagulantes" },
+                { value: 16, label: "Urológicos" },
+                { value: 17, label: "Antiparkinsonianos" },
+                { value: 18, label: "Antiácidos" },
+                { value: 19, label: "Antivirales para la Hepatitis" },
+                { value: 20, label: "Menopausia" },
+                { value: 21, label: "Antieméticos" },
+                { value: 22, label: "Corticosteroides Tópicos" },
+                { value: 23, label: "Antiepilépticos" },
+                { value: 24, label: "Antitiroides" },
+                { value: 25, label: "AINEs" },
+                { value: 26, label: "Osteoporosis" },
+                { value: 27, label: "Vitaminas y minerales" },
+                { value: 28, label: "Trastornos del Sueño" },
+                { value: 29, label: "Anticonvulsivantes" },
+                { value: 31, label: "Glaucoma" },
+                { value: 32, label: "Antidepresivos" },
+                { value: 33, label: "Analgésicos" },
+                { value: 34, label: "Antiinfecciosos urinarios" },
+                { value: 35, label: "EPOC" },
+                { value: 36, label: "Antifúngicos" },
+                { value: 37, label: "Inhaladores nasales" },
+                { value: 38, label: "Antihiperglucemiantes" },
+                { value: 39, label: "Antibióticos" },
+                { value: 40, label: "Ansiolíticos" }
             ],
             Presentaciones:[
-                { value: "tabletas_comprimidos", label: "Tabletas - Comprimidos" },
-                { value: "capsulas", label: "Cápsulas" },
-                { value: "jarabe", label: "Jarabe" },
-                { value: "inyeccion", label: "Inyección" },
-                { value: "supositorio", label: "Supositorio" },
-                { value: "crema_unguento", label: "Crema - Ungüento" },
-                { value: "gotas", label: "Gotas" },
-                { value: "aerosol", label: "Aerosol" },
-                { value: "polvos", label: "Polvos" },
-                { value: "parches", label: "Parches Transdérmicos" },
-                { value: "ampolla", label: "Ampolla" },
-                { value: "ovulo", label: "Óvulo" },
-                { value: "gel", label: "Gel" },
-                { value: "pastilla", label: "Pastilla Efervescente" },
-                { value: "spray", label: "Spray" },
-                { value: "botella", label: "Botella" },
-                { value: "bolsa", label: "Bolsa" },
-                { value: "frasco", label: "Frasco" }
+                { value: 1, label: "Tabletas - Comprimidos" },
+                { value: 2, label: "Cápsulas" },
+                { value: 3, label: "Jarabe" },
+                { value: 4, label: "Inyección" },
+                { value: 5, label: "Supositorio" },
+                { value: 6, label: "Crema - Ungüento" },
+                { value: 7, label: "Gotas" },
+                { value: 8, label: "Aerosol" },
+                { value: 9, label: "Polvos" },
+                { value: 10, label: "Parches Transdérmicos" },
+                { value: 11, label: "Ampolla" },
+                { value: 12, label: "Óvulo" },
+                { value: 13, label: "Gel" },
+                { value: 14, label: "Pastilla Efervescente" },
+                { value: 15, label: "Spray" },
+                { value: 16, label: "Botella" },
+                { value: 17, label: "Bolsa" },
+                { value: 18, label: "Frasco" }
             ]
         };
     }
