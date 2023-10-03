@@ -19,7 +19,7 @@ import Footer from '../components/Footer.vue'
 import BackButton from '../components/BackButton.vue'
 import Pedidos from '../components/Pedidos.vue'
 export default {
-    name: 'CarritoPage',
+    name: 'MisPedidos',
     props: {},
     components: {
         NavBar,

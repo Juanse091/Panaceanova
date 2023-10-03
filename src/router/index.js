@@ -16,6 +16,7 @@ import AfiliadoHubPage from '../views/AfiliadoHubPage'
 import ParticularHubPage from '../views/ParticularHubPage'
 import EditProductoPage from '../views/EditProductoPage'
 import EditUsuarioPage from '../views/EditUsuarioPage'
+import PedidosAdminPage from '../views/PedidosAdminPage'
 
 const routes = [
   {
@@ -71,6 +72,9 @@ const routes = [
   },
   {
     path: '/EditUsuario', component: EditUsuarioPage
+  },
+  {
+    path: '/PedidosAdminPage', component: PedidosAdminPage
   }
 ]
 
