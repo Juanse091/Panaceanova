@@ -14,7 +14,7 @@ input, select{
 }
 
 
-.productadmin_table{
+.useradmin_table{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +23,7 @@ input, select{
     margin-bottom: 100px;
 }
 
-.productadmin_form_btn{
+.useradmin_form_btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@ input, select{
     cursor: pointer;
 }
 
-.productadmin_form_btn>p{
+.useradmin_form_btn>p{
     font-family: 'Montserrat';
     font-size: 25px;
 }
@@ -58,16 +58,16 @@ input, select{
         font-size: 15px;
     }
 
-    .productadmin_table{
+    .useradmin_table{
         margin-bottom: 50px;
     }
 
-    .productadmin_form_btn{
+    .useradmin_form_btn{
         margin-top: 45px;
         width: 40%;
     }
     
-    .productadmin_form_btn>p{
+    .useradmin_form_btn>p{
         font-family: 'Montserrat';
         font-size: 25px;
     }
