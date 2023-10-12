@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.enviopago_container{
+    display: flex;
+    flex-direction: row;
+    width: 1920px;
+    height: 1080px;
+    
+}
+
+.envio{
+    width: 100%;
+}
+
+.pago{
+    background-color: #A32B2B;
+    width: 100%;
+}
