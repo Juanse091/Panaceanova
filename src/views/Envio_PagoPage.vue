@@ -19,24 +19,19 @@
                 <h2 class="pago_title">Metodo de pago</h2>
                 <label>
                     <input type="radio" class="pago_radio" name="metodoPago" value="1" v-model="selectedOption"> Tarjeta de
-                    Credito
+                    Credito o Debito
                 </label>
 
                 <label>
-                    <input type="radio" class="pago_radio" name="metodoPago" value="2" v-model="selectedOption"> Tarjeta de
-                    Debito
+                    <input type="radio" class="pago_radio" name="metodoPago" value="2" v-model="selectedOption"> PSE
                 </label>
 
                 <label>
-                    <input type="radio" class="pago_radio" name="metodoPago" value="3" v-model="selectedOption"> PSE
+                    <input type="radio" class="pago_radio" name="metodoPago" value="3" v-model="selectedOption"> PayPal
                 </label>
 
                 <label>
-                    <input type="radio" class="pago_radio" name="metodoPago" value="4" v-model="selectedOption"> PayPal
-                </label>
-
-                <label>
-                    <input type="radio" class="pago_radio" name="metodoPago" value="5" v-model="selectedOption"> Mercado
+                    <input type="radio" class="pago_radio" name="metodoPago" value="4" v-model="selectedOption"> Mercado
                     Pago
                 </label>
             </div>
@@ -69,18 +64,15 @@ export default {
             }
             switch (this.selectedOption) {
                 case '1':
-                    this.$router.push('/');
+                    this.$router.push('/PagoTarjetaPage');
                     break;
                 case '2':
-                    this.$router.push('/medicamentos');
-                    break;
-                case '3':
                     window.open('https://www.pse.com.co/persona', '_blank');
                     break;
-                case '4':
+                case '3':
                     window.open('https://www.paypal.com/co/home', '_blank');
                     break;
-                case '5':
+                case '4':
                     window.open('https://www.mercadopago.com.co', '_blank');
                     break;
                 default:

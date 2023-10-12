@@ -19,6 +19,7 @@ import EditUsuarioPage from '../views/EditUsuarioPage'
 import EditPedidoPage from '../views/EditPedidoPage'
 import PedidosAdminPage from '../views/PedidosAdminPage'
 import Envio_PagoPage from '../views/Envio_PagoPage'
+import Pago_tarjetaPage from '../views/Pago_tarjetaPage'
 
 const routes = [
   {
@@ -83,6 +84,9 @@ const routes = [
   },
   {
     path: '/EnvioPagoPage', component: Envio_PagoPage
+  },
+  {
+    path: '/PagoTarjetaPage', component: Pago_tarjetaPage
   }
 ]
 
