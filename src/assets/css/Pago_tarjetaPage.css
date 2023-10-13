@@ -82,3 +82,11 @@ input:focus{
     background-color: #A32B2B;
     color: white;
 }
+
+.redbox{
+    background-color: #A32B2B;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}

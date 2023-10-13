@@ -1,9 +1,9 @@
 <template>
-    <form class="tarjetapago_container">
+    <form class="tarjetapago_container" @submit="submitForm">
         <section class="tarjeta">
             <router-link class="back_btn" to="/EnvioPagoPage" style="text-decoration: none;">
                 <i class="bi bi-chevron-left back_icon"></i>
-                <h2>Volver</h2> 
+                <h2>Volver</h2>
             </router-link>
             <h2 class="tarjetapago_title">Datos de la Tarjeta</h2>
             <input type="number" class="pago_numero_input" placeholder="Numero Tarjeta" maxlength="10" required>
@@ -14,7 +14,7 @@
             <button class="tarjeta_pago_btn" type="submit">PROCEDER AL PAGO</button>
         </section>
 
-        <section class="pago">
+        <section class="redbox">
         </section>
     </form>
 </template>
@@ -30,6 +30,12 @@ export default {
         NavBar,
         Footer,
         BackButton,
+    },
+    methods: {
+        submitForm(event) {
+            event.preventDefault();
+            this.$router.push({ path: '/PagoExitosoPage' });
+        }
     }
 }
 </script>

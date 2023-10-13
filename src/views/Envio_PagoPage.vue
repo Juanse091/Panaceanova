@@ -68,12 +68,15 @@ export default {
                     break;
                 case '2':
                     window.open('https://www.pse.com.co/persona', '_blank');
+                    this.$router.push('/PagoExitosoPage');
                     break;
                 case '3':
                     window.open('https://www.paypal.com/co/home', '_blank');
+                    this.$router.push('/PagoExitosoPage');
                     break;
                 case '4':
                     window.open('https://www.mercadopago.com.co', '_blank');
+                    this.$router.push('/PagoExitosoPage');
                     break;
                 default:
                     break;
