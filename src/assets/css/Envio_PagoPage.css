@@ -138,3 +138,59 @@ input:focus{
 }
 
 
+@media (max-width: 500px) {
+    .enviopago_container{
+        flex-direction: column;
+    }
+
+    .envio{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .envio_title{
+        margin-bottom: 45px;
+    }
+
+    .envio_direccion_input{
+        margin-bottom: 35px;
+    }
+
+    .name_id_container{
+        width: 85%;
+        flex-direction: column;
+    }
+
+    .name_id_container>input{
+        margin-bottom: 35px;
+    }
+    
+    .dept_ciudad_container{
+        width: 85%;
+        flex-direction: column;
+    }
+    
+    .dept_ciudad_container>input{
+        margin-bottom: 35px;
+    }
+    
+    .title_radio_container{
+        margin-top: 2rem;
+    }
+    
+    .pago_title{
+        margin-bottom: 45px;
+    }
+    
+    .title_radio_container>label{
+        margin-bottom: 45px;
+        width: 90%;
+    }
+    
+    .envio_pago_btn{
+        width: 65%;
+        font-size: 22px;
+        margin-left: 17%;
+        margin-bottom: 50px;
+    }
+}

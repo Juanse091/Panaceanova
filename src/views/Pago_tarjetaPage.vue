@@ -11,7 +11,7 @@
                 <input type="date" class="pago_fecha_input" placeholder="Fecha Vencimiento" maxlength="45" required>
                 <input type="number" class="pago_cvv_input" placeholder="CVV" maxlength="3" required>
             </div>
-            <button class="tarjeta_pago_btn" type="submit">PROCEDER AL PAGO</button>
+            <button class="tarjeta_pago_btn" type="submit">CONFIRMAR</button>
         </section>
 
         <section class="redbox">

@@ -90,3 +90,41 @@ input:focus{
     flex-direction: column;
     text-align: left;
 }
+
+@media (max-width: 500px) {    
+    .tarjetapago_container{
+        height: 800px;
+    }
+
+    .tarjeta{
+        margin-top: 5rem;
+    }
+    
+    .back_btn{
+        margin-bottom: 5rem;
+    }
+    
+    .tarjetapago_title{
+        margin-bottom: 75px;
+    }
+    
+    .pago_numero_input{
+        margin-bottom: 50px;
+    }
+    
+    .fecha_cvv_container{
+        width: 85%;
+        flex-direction: column;
+    }
+    
+    .fecha_cvv_container>input{
+        margin-bottom: 50px;
+    }
+    
+    .tarjeta_pago_btn{
+        width: 65%;
+        font-size: 25px;
+        margin-left: 10%;
+    }
+    
+}
