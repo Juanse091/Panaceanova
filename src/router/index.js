@@ -21,6 +21,7 @@ import PedidosAdminPage from '../views/PedidosAdminPage'
 import Envio_PagoPage from '../views/Envio_PagoPage'
 import Pago_tarjetaPage from '../views/Pago_tarjetaPage'
 import PagoExitosoPage from '../views/PagoExitosoPage'
+import PoliticasPage from '../views/PoliticasPage'
 
 const routes = [
   {
@@ -91,6 +92,9 @@ const routes = [
   },
   {
     path: '/PagoExitosoPage', component: PagoExitosoPage
+  },
+  {
+    path: '/PoliticasPage', component: PoliticasPage
   }
 ]
 

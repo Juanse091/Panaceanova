@@ -14,7 +14,7 @@
                     </router-link>
                 </a>
                 <a href="">
-                    <p class="info_text">Politicas y terminos de uso</p>
+                    <p class="info_text">Politicas</p>
                 </a>
             </div>
             <div class="contactanos">
